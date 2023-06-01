@@ -1,0 +1,45 @@
+/*A principio é necessario setar o user e email que serao utilizados
+*/
+
+git config --global user.name "M" // M é o seu user do Github
+git config --global user.name "A@gmail.com" // A@gmail.com é o seu email da qual sua conta foi criada 
+
+//  acessar a area de trabalho
+cd Desktop
+
+//crie uma pasta para alocar seu repositorio
+git mkdir MeuRep
+
+// acessar a pasta quer foi criada
+cd MeuRep
+
+// crie o .git
+git init 
+
+// crie o arquivo necessario
+git touch bruh.txt 
+
+// checar todos os arquivos no diretório
+ls
+
+// ver se tudo esta ok
+git status
+
+// fazer a commit
+git commit -m "Bruh"
+
+// add uma nova branch
+git checkout -b Brunch
+
+// ver as brances existentes 
+git branch
+
+// crie o repositorio no github
+
+// colocar seu repositorio local na nuvem
+git remote add origin https://github.com/user/repositorio //user é o seu usuario no Guthub; repositorio é o nome do seu repositorio no Github
+
+// fazer o upload do local para a nuvem 
+git push origin Brunch
+
+//Feito
